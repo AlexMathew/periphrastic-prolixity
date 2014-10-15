@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The ramblings go on]]></title>
+  <link href="http://periphrastic-prolixity.herokuapp.com/atom.xml" rel="self"/>
+  <link href="http://periphrastic-prolixity.herokuapp.com/"/>
+  <updated>2014-10-15T23:19:54+05:30</updated>
+  <id>http://periphrastic-prolixity.herokuapp.com/</id>
+  <author>
+    <name><![CDATA[Alex Mathew]]></name>
+    <email><![CDATA[alexmathew003@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Beginnings]]></title>
+    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/the-beginnings/"/>
+    <updated>2014-10-15T23:07:00+05:30</updated>
+    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/the-beginnings</id>
+    <content type="html"><![CDATA[<p>In the beginning, there was nothing. And then I said &ldquo;Let there be a blog&rdquo;. And it was done.</p>
+
+<!-- more -->
+
+
+<p>I&rsquo;ve always wanted to do this. Laziness always stopped me. But I&rsquo;m not going to let it stop me anymore. I&rsquo;ve made the decision now. I am going to maintain this blog.</p>
+
+<p>I don&rsquo;t have any particular agenda of what I&rsquo;m going to put in here. Just my thoughts/opinions/reviews of stuff, a live blog of anything I&rsquo;m working on. Just to give some direction to my ideas. I&rsquo;m not going to try to make this huge and viral. I&rsquo;ll just let this lie in a corner of the vast expanse of the Internet, so I can look at it some day and recollect how I went about stuff (or say &ldquo;what was I thinking ?&rdquo;).</p>
+
+<p>Let the ride begin. And may the blog be forever in your favour.</p>
+]]></content>
+  </entry>
+  
+</feed>
