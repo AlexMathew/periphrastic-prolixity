@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Periphrastic Prolixity]]></title>
-  <link href="http://periphrastic-prolixity.herokuapp.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Latentview | Periphrastic Prolixity]]></title>
+  <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/latentview/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
   <updated>2014-10-16T00:09:08+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
@@ -42,24 +42,6 @@ Text analysis.</p>
 <p>If you&rsquo;re reading this and think there&rsquo;s a better way than the approach I&rsquo;ve taken, do give your suggestions ! Also, suggest resources to get started with them. You can write to me at alexmathew003[at]gmail[dot]com</p>
 
 <p>Check out the &ldquo;TNT&rdquo; category on the blog to read the posts. I&rsquo;ll make regular updates as I make progress.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Beginnings]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/the-beginnings/"/>
-    <updated>2014-10-15T23:07:00+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/the-beginnings</id>
-    <content type="html"><![CDATA[<p>In the beginning, there was nothing. And then I said &ldquo;Let there be a blog&rdquo;. And it was done.</p>
-
-<!-- more -->
-
-
-<p>I&rsquo;ve always wanted to do this. Laziness always stopped me. But I&rsquo;m not going to let it stop me anymore. I&rsquo;ve made the decision now. I am going to maintain this blog.</p>
-
-<p>I don&rsquo;t have any particular agenda of what I&rsquo;m going to put in here. Just my thoughts/opinions/reviews of stuff, a live blog of anything I&rsquo;m working on. Just to give some direction to my ideas. I&rsquo;m not going to try to make this huge and viral. I&rsquo;ll just let this lie in a corner of the vast expanse of the Internet, so I can look at it some day and recollect how I went about stuff (or say &ldquo;what was I thinking ?&rdquo;).</p>
-
-<p>Let the ride begin. And may the blog be forever in your favour.</p>
 ]]></content>
   </entry>
   
