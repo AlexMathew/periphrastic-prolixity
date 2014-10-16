@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/</loc>
+    
+    <lastmod>2014-10-16T14:58:04+05:30</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/cause-im-tnt/</loc>
     
     <lastmod>2014-10-15T23:33:31+05:30</lastmod>
@@ -21,14 +29,14 @@
   
   <url>
     <loc>http://periphrastic-prolixity.herokuapp.com/</loc>
-    <lastmod>2014-10-16T00:09:08+05:30</lastmod>
+    <lastmod>2014-10-16T15:51:40+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://periphrastic-prolixity.herokuapp.com/blog/archives/</loc>
-    <lastmod>2014-10-16T00:09:08+05:30</lastmod>
+    <lastmod>2014-10-16T15:51:40+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -4,7 +4,7 @@
   <title><![CDATA[Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-10-16T00:09:08+05:30</updated>
+  <updated>2014-10-16T15:51:40+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -12,6 +12,62 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The TNT Journey - Part 1]]></title>
+    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/"/>
+    <updated>2014-10-16T14:58:04+05:30</updated>
+    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1</id>
+    <content type="html"><![CDATA[<p>And so, the journey with TNT begins. A 175K+ row dataset. A new challenge.</p>
+
+<p>Over the next few posts, I&rsquo;ll document the various facets of my approach to this problem. Part 1 - how do I get started ?</p>
+
+<!--more-->
+
+
+<p>I registered for the event a few days after I heard about it. I thought I&rsquo;d give myself time to get some basic idea in place before I get started. So I took my time to read about various statistics that people proposed and how it&rsquo;d help in finding the most efficient players. In my head, it felt like Brad Pitt and Jonah Hill discussing Sabermetrics. I loved how people were crunching numbers to produce evidence of how the statistic they proposed was effective. It seemed simple enough - work with their averages and strike rates and other basic statistics. With the expected basic idea in place, I registered for TNT, and later that day, I got the link to the dataset. Downloaded the file, unzipped it and opened the Excel sheet. And then the bomb dropped.</p>
+
+<p>Ball-by-ball data.</p>
+
+<p>Somehow, I didn&rsquo;t expect that I would have to work with ball-by-ball data. In its native form, ball-by-ball stats are pretty useless (unless you&rsquo;re analyzing run rate patterns and everything). So before getting to work with various performance measures, I had to put the available data together into cummulative stats.</p>
+
+<p>I had a CSV file to work with. I had to pick my weapon to get started. I had a few options.</p>
+
+<ol type="a">
+<li>I&rsquo;d always wanted to get started with learning R. I never found a compelling reason to get around to working with it. This seemed like a very good starting point. But I didn&rsquo;t want to learn something from scratch for this. I thought it&rsquo;d be a low-efficiency move to tread into unfamiliar territory, just to work with this dataset. So R, maybe later. Ruled out for now.</li>
+</ol>
+
+
+<p>Pandas. Familiarity with Python, check. An interest to work with the data side of Python, check. But Pandas is very vast. Getting a base with NumPy to just get started is very hard. So SciPy stack, sometime soon, but not now. Ruled out for now.</p>
+
+<p>I had a large dataset that I had to break into cummulative stats of each player. And I needed somewhere to store it. I would use a database anyway, so why not use it to also aggregate the data the way I need it ? And that was option 3.</p>
+
+<p>MongoDB. I had done some basic work with MongoDB. The M101P course (which, even after 3 attempts, I haven&rsquo;t been able to finish) gave me a decent base with the CRUD and aggregation operations. 175K row dataset - bring out the aggregation framework !</p>
+
+<p>Importing the data into a DB was easier than I thought.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mongoimport --db tnt --collection odi --type csv --file ODI.csv --headerline </span></code></pre></td></tr></table></div></figure>
+
+
+<p>And that was done. Easy stuff.</p>
+
+<p>The hard part was writing aggregation commands to do the required grouping. It&rsquo;s sort of like writing regular expressions - extremely hard, very annoying, but so damn powerful. After a lot of reference from the MongoDB docs and StackOverflow, I managed to get the stats I needed. For example, to get the total runs that a batsman scored.</p>
+
+<figure class='code'><figcaption><span>MongoDB aggregation to find total runs scored</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">db</span><span class="p">.</span><span class="nx">odi</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([{</span> <span class="nx">$group</span><span class="o">:</span> <span class="p">{</span><span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;$Batsman&quot;</span><span class="p">,</span> <span class="nx">Runs</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$sum</span><span class="o">:</span> <span class="s2">&quot;$Runs Batsman&quot;</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="p">{</span> <span class="nx">$sort</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;Runs&quot;</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">}</span> <span class="p">}])</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Some easy ones and some hard. And I managed to get the stats I needed.</p>
+
+<p>Now, step 2. I need to put this together and build some performance measures.</p>
+
+<p>Part 2 of this series will be up when I have some significant progress on that front.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Cause I'm TNT, I'm Dynamite]]></title>
