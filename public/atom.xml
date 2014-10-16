@@ -4,7 +4,7 @@
   <title><![CDATA[Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-10-16T15:51:40+05:30</updated>
+  <updated>2014-10-16T18:24:03+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -33,16 +33,13 @@
 
 <p>I had a CSV file to work with. I had to pick my weapon to get started. I had a few options.</p>
 
-<ol type="a">
-<li>I&rsquo;d always wanted to get started with learning R. I never found a compelling reason to get around to working with it. This seemed like a very good starting point. But I didn&rsquo;t want to learn something from scratch for this. I thought it&rsquo;d be a low-efficiency move to tread into unfamiliar territory, just to work with this dataset. So R, maybe later. Ruled out for now.</li>
-</ol>
+<p>Option 1 - R. I&rsquo;d always wanted to get started with learning R. I never found a compelling reason to get around to working with it. This seemed like a very good starting point. But I didn&rsquo;t want to learn something from scratch for this. I thought it&rsquo;d be a low-efficiency move to tread into unfamiliar territory, just to work with this dataset. So R, maybe later. Ruled out for now.</p>
 
-
-<p>Pandas. Familiarity with Python, check. An interest to work with the data side of Python, check. But Pandas is very vast. Getting a base with NumPy to just get started is very hard. So SciPy stack, sometime soon, but not now. Ruled out for now.</p>
+<p>Option 2 - Pandas. Familiarity with Python, check. An interest to work with the data side of Python, check. But Pandas is very vast. Getting a base with NumPy to just get started is very hard. So SciPy stack, sometime soon, but not now. Ruled out for now.</p>
 
 <p>I had a large dataset that I had to break into cummulative stats of each player. And I needed somewhere to store it. I would use a database anyway, so why not use it to also aggregate the data the way I need it ? And that was option 3.</p>
 
-<p>MongoDB. I had done some basic work with MongoDB. The M101P course (which, even after 3 attempts, I haven&rsquo;t been able to finish) gave me a decent base with the CRUD and aggregation operations. 175K row dataset - bring out the aggregation framework !</p>
+<p>Option 3 - MongoDB. I had done some basic work with MongoDB. The M101P course (which, even after 3 attempts, I haven&rsquo;t been able to finish) gave me a decent base with the CRUD and aggregation operations. 175K row dataset - bring out the aggregation framework !</p>
 
 <p>Importing the data into a DB was easier than I thought.</p>
 
@@ -55,7 +52,7 @@
 <p>The hard part was writing aggregation commands to do the required grouping. It&rsquo;s sort of like writing regular expressions - extremely hard, very annoying, but so damn powerful. After a lot of reference from the MongoDB docs and StackOverflow, I managed to get the stats I needed. For example, to get the total runs that a batsman scored.</p>
 
 <figure class='code'><figcaption><span>MongoDB aggregation to find total runs scored</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">db</span><span class="p">.</span><span class="nx">odi</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([{</span> <span class="nx">$group</span><span class="o">:</span> <span class="p">{</span><span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;$Batsman&quot;</span><span class="p">,</span> <span class="nx">Runs</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$sum</span><span class="o">:</span> <span class="s2">&quot;$Runs Batsman&quot;</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="p">{</span> <span class="nx">$sort</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;Runs&quot;</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">}</span> <span class="p">}])</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">db</span><span class="p">.</span><span class="nx">odi</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([{</span> <span class="nx">$group</span><span class="o">:</span> <span class="p">{</span> <span class="nx">_id</span><span class="o">:</span> <span class="s2">&quot;$Batsman&quot;</span><span class="p">,</span> <span class="nx">Runs</span><span class="o">:</span> <span class="p">{</span> <span class="nx">$sum</span><span class="o">:</span> <span class="s2">&quot;$Runs Batsman&quot;</span> <span class="p">}</span> <span class="p">}</span> <span class="p">},</span> <span class="p">{</span> <span class="nx">$sort</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;Runs&quot;</span><span class="o">:</span> <span class="o">-</span><span class="mi">1</span> <span class="p">}</span> <span class="p">}])</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
