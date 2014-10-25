@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>The TNT Journey - Part 2 - Periphrastic Prolixity</title>
+  <meta name="author" content="Alex Mathew">
+
+  
+  <meta name="description" content="Step 1 : Get cummulative statistics. Done. Now I need to find a way to measure the performance of these players during this period. Several people &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Periphrastic Prolixity" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Periphrastic Prolixity</a></h1>
+  
+    <h2>Because thoughts need somewhere to live</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:periphrastic-prolixity.herokuapp.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">The TNT Journey - Part 2</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-17T00:02:10+05:30'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>17</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:02 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Step 1 : Get cummulative statistics. <a href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/">Done</a>.</p>
+
+<p>Now I need to find a way to measure the performance of these players during this period. Several people have written about different statistics to do this. I need to pick the best ones for the problem I have at hand.</p>
+
+<!--more-->
+
+
+<p>Aggregation worked beautifully. I got the cummulative stats I needed to work with. Now I have to put this into a new collection and I&rsquo;m all set to go. Except, it wasn&rsquo;t that easy. Updating a collection with results from the aggregation pipeline is pretty hard. Looping through the results is too inefficient. After some research (read, StackOverflow), I found the $out pipeline stage. Seemed like just what I needed. I gave it a shot and got this.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"errmsg" : "exception: Unrecognized pipeline stage name: '$out'"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Roadblock ! Turns out $out is a new addition in MongoDB 2.6 and I was working with 2.4. So before any more progress could happen, an update had to happen.</p>
+
+<p>While I waited for the 100+ MB file download to complete (I have bad internet - 100MB is a big deal), I read some Quora answers and research papers on performance measures. Now I had to pick the ones that gave the most efficient results.</p>
+
+<p>I needed some proper measures to judge how useful a player is on a team. It&rsquo;s cricket, so a player can contribute to a team in many different ways. He could be a batsman who plays the bulk of the innings to set up the score, or he could be a batsman who faces around 15 or 20 balls to make a quickfire 30. He could be the strike bowler who takes 2 or 3 wickets in his qouta of 10 overs, or he could be the bowler who restricts the opponents&#8217; run flow by conceding only at around 3 runs an over.</p>
+
+<p>So what statistics would I have to consider ?</p>
+
+<ul>
+<li><p>Batting average : Runs scored per out. Undoubtedly, one of the most argued about statistics in cricket. And for valid reasons. The batting average ends up extremely skewed in favour of players who come lower down the order, because of the higher probability that they&rsquo;d remain not out.</p></li>
+<li><p>Strike rate : Runs scored per 100 balls. I remember watching cricket at a time when a strike rate of around 80 was the trademark of a &ldquo;blazing innings&rdquo;. Times have definitely changed. Higher strike rates are a major focus in batting line ups.</p></li>
+<li><p>Batting pinch hitting rate : A very good idea I got out of <a href="http://www.quora.com/What-new-statistical-measures-could-make-cricket-better-in-terms-of-player-evaluation-and-viewer-experience/answer/Thomas-Foster">this Quora answer</a>. Boundaries have a huge impact on the flow of a match. It switches momentum, leads to the fielding setup getting shuffled, and so much more. This can be improved a little by giving a higher weightage to sixes (because sixes are awesome !).</p></li>
+<li><p>Bowling average : Runs conceded per wicket taken. The lower, the better. Pretty efficient stat to work with.</p></li>
+<li><p>Bowling strike rate : Balls bowled per wicket. Because strike bowlers strike often.</p></li>
+<li><p>Bowling pinch hitting rate : If it can be used to quantify a batsman&rsquo;s performance, it can be used for bowlers too. Batsmen want to score boundaries, bowlers should make sure they can&rsquo;t.</p></li>
+</ul>
+
+
+<p>I need to find a way to work with all of these numbers together. And there should be an efficient way to strike a balance. Hashim Amla may not be the quickest scorer, but he definitely scores a lot. James Anderson has an average economy rate, but he&rsquo;s one of the best strike bowlers in the world. Normalize, combine these stats into one index - I need to see what works best.</p>
+
+<p>In other MongoDB news, it turns out $out is not what I need. I need to combine the results from multiple aggregation commands into one collection, but $out puts the result from one aggregation command into one collection. So I need to move back to my original option of looping through the results. Fire IPython, <code>import pymongo</code> and get to work.</p>
+
+<p>Now that I have player-wise statistics, I need to find the most efficient way to quantify their overall performance and pick the best performers.</p>
+
+<p>Part 3 may take a while to come out. I&rsquo;ll work on some options and make one grand update on my progress.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Alex Mathew</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-17T00:02:10+05:30'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>17</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:02 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/latentview/'>latentview</a>, <a class='category' href='/blog/categories/tnt/'>tnt</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2/" data-via="alxmth03" data-counturl="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/16/the-tnt-journey-part-1/" title="Previous Post: The TNT Journey - Part 1">&laquo; The TNT Journey - Part 1</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/10/17/the-tnt-journey-part-2/">The TNT Journey - Part 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/16/the-tnt-journey-part-1/">The TNT Journey - Part 1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/15/cause-im-tnt/">Cause I&#8217;m TNT, I&#8217;m Dynamite</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/15/the-beginnings/">The Beginnings</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/AlexMathew">@AlexMathew</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'AlexMathew',
+            count: 2,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/+AlexMathew003?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Alex Mathew -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Latentview | Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/latentview/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-10-16T18:24:03+05:30</updated>
+  <updated>2014-10-26T02:34:31+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The TNT Journey - Part 2]]></title>
+    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2/"/>
+    <updated>2014-10-17T00:02:10+05:30</updated>
+    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2</id>
+    <content type="html"><![CDATA[<p>Step 1 : Get cummulative statistics. <a href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/">Done</a>.</p>
+
+<p>Now I need to find a way to measure the performance of these players during this period. Several people have written about different statistics to do this. I need to pick the best ones for the problem I have at hand.</p>
+
+<!--more-->
+
+
+<p>Aggregation worked beautifully. I got the cummulative stats I needed to work with. Now I have to put this into a new collection and I&rsquo;m all set to go. Except, it wasn&rsquo;t that easy. Updating a collection with results from the aggregation pipeline is pretty hard. Looping through the results is too inefficient. After some research (read, StackOverflow), I found the $out pipeline stage. Seemed like just what I needed. I gave it a shot and got this.</p>
+
+<pre><code>"errmsg" : "exception: Unrecognized pipeline stage name: '$out'"
+</code></pre>
+
+<p>Roadblock ! Turns out $out is a new addition in MongoDB 2.6 and I was working with 2.4. So before any more progress could happen, an update had to happen.</p>
+
+<p>While I waited for the 100+ MB file download to complete (I have bad internet - 100MB is a big deal), I read some Quora answers and research papers on performance measures. Now I had to pick the ones that gave the most efficient results.</p>
+
+<p>I needed some proper measures to judge how useful a player is on a team. It&rsquo;s cricket, so a player can contribute to a team in many different ways. He could be a batsman who plays the bulk of the innings to set up the score, or he could be a batsman who faces around 15 or 20 balls to make a quickfire 30. He could be the strike bowler who takes 2 or 3 wickets in his qouta of 10 overs, or he could be the bowler who restricts the opponents&#8217; run flow by conceding only at around 3 runs an over.</p>
+
+<p>So what statistics would I have to consider ?</p>
+
+<ul>
+<li><p>Batting average : Runs scored per out. Undoubtedly, one of the most argued about statistics in cricket. And for valid reasons. The batting average ends up extremely skewed in favour of players who come lower down the order, because of the higher probability that they&rsquo;d remain not out.</p></li>
+<li><p>Strike rate : Runs scored per 100 balls. I remember watching cricket at a time when a strike rate of around 80 was the trademark of a &ldquo;blazing innings&rdquo;. Times have definitely changed. Higher strike rates are a major focus in batting line ups.</p></li>
+<li><p>Batting pinch hitting rate : A very good idea I got out of <a href="http://www.quora.com/What-new-statistical-measures-could-make-cricket-better-in-terms-of-player-evaluation-and-viewer-experience/answer/Thomas-Foster">this Quora answer</a>. Boundaries have a huge impact on the flow of a match. It switches momentum, leads to the fielding setup getting shuffled, and so much more. This can be improved a little by giving a higher weightage to sixes (because sixes are awesome !).</p></li>
+<li><p>Bowling average : Runs conceded per wicket taken. The lower, the better. Pretty efficient stat to work with.</p></li>
+<li><p>Bowling strike rate : Balls bowled per wicket. Because strike bowlers strike often.</p></li>
+<li><p>Bowling pinch hitting rate : If it can be used to quantify a batsman&rsquo;s performance, it can be used for bowlers too. Batsmen want to score boundaries, bowlers should make sure they can&rsquo;t.</p></li>
+</ul>
+
+
+<p>I need to find a way to work with all of these numbers together. And there should be an efficient way to strike a balance. Hashim Amla may not be the quickest scorer, but he definitely scores a lot. James Anderson has an average economy rate, but he&rsquo;s one of the best strike bowlers in the world. Normalize, combine these stats into one index - I need to see what works best.</p>
+
+<p>In other MongoDB news, it turns out $out is not what I need. I need to combine the results from multiple aggregation commands into one collection, but $out puts the result from one aggregation command into one collection. So I need to move back to my original option of looping through the results. Fire IPython, <code>import pymongo</code> and get to work.</p>
+
+<p>Now that I have player-wise statistics, I need to find the most efficient way to quantify their overall performance and pick the best performers.</p>
+
+<p>Part 3 may take a while to come out. I&rsquo;ll work on some options and make one grand update on my progress.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 1]]></title>
