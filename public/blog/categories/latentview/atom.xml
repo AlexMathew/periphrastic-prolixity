@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Latentview | Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/latentview/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-10-26T02:34:31+05:30</updated>
+  <updated>2014-10-26T12:43:48+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -12,6 +12,61 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The TNT Journey - Part 3]]></title>
+    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/"/>
+    <updated>2014-10-26T11:27:57+05:30</updated>
+    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3</id>
+    <content type="html"><![CDATA[<p>Records, exams, assignments. The absolute worst time possible. Indian education will not improve till they get rid of this concept of maintaining a formal record book where you write unnecessary garbage. In the middle of all this, finding time to work on the TNT problem has been hard. But I&rsquo;ve been reading, trying out stuff and making some gradual progress. And of late, I&rsquo;ve approached this in a different way. Advice from a professor gave me an interesting way to go about this problem. Implementing has been hard, but the idea behind it is brilliant.</p>
+
+<!--more-->
+
+
+<p>&ldquo;Don&rsquo;t look for individual best performers. Put the team together and see the overall rating of the team. Pick the best team, not a collection of the best players&rdquo;. I had never thought of that, really. The best players statistic-wise could all be batsmen, and I&rsquo;d end up with a batting-heavy team with a poor bowling attack. So I had to find a way to strike a balance, by considering the team as a whole. And I considered using my professor&rsquo;s advice - genetic algorithms.</p>
+
+<p>The idea was simple. From this <a href="http://www.obitko.com/tutorials/genetic-algorithms/ga-basic-description.php">basic introductory post about GA</a>,</p>
+
+<blockquote><p>Algorithm is started with a set of solutions (represented by chromosomes) called population. Solutions from one population are taken and used to form a new population. This is motivated by a hope, that the new population will be better than the old one. Solutions which are selected to form new solutions (offspring) are selected according to their fitness - the more suitable they are the more chances they have to reproduce.</p></blockquote>
+
+<p>I found a bunch of research papers, where people used GAs to do this exact thing - build fantasy cricket teams. The concept seemed simple enough - pick the parameters you want to maximise on, and implement the algorithm.</p>
+
+<p>Implementing seemed like a bitch. The NSGA-II algorithm was an extremely computation-intensive algorithm that involved many iterations, so I knew I couldn&rsquo;t write the algorithm from scratch and expect to get an optimized implementation. I had either go for Python genetic programming libraries, or find someone else&rsquo;s implementation of the algorithm. I checked out <a href="https://code.google.com/p/deap/">Deap</a> - it looked like it could effectively give me what I needed. But setting up was really hard. I couldn&rsquo;t make much progress even after hours of reading the docs. So, Deap is on hold.</p>
+
+<p>I found <a href="https://code.google.com/p/pynsga2/">another implementation of NSGA-II</a> that used multiprocessing to improve the speed of implementation. It required the fitness to be in a separate file - I need to try it out and see how that works.</p>
+
+<p>So for now, it&rsquo;s still an experimentation phase with the implementation of the algorithm. I took some time out to decide the parameters I&rsquo;d want to maximise the fitness on.</p>
+
+<p>BATSMEN :</p>
+
+<ul>
+<li><p>Runs per wicket : The batting average of the batsman. For good batsmen in the current cricketing world, this number hovers around 40.</p></li>
+<li><p>Runs per 100 balls : The strike rate of the batsman. A strike rate of >85 is generally considered very good. A batsman with a 100+ strike rate is an ideal pinch hitter to finish the innings.</p></li>
+<li><p>Pinch hitting rate : Boundaries scored per 100 balls, with more weight given to sixes. So effectively,
+<code>python
+pinch_hitting = 100.0 * (fours + (1.5 * sixes)) / balls_faced
+</code></p></li>
+</ul>
+
+
+<p>BOWLERS :</p>
+
+<p>The standard bowling statistics require to be minimized on. So for convenience sake, I took the inverse of these numbers, so I could maximise on them.</p>
+
+<ul>
+<li><p>Overs to concede 100 runs : A number built from the inverse of the economy rate. For good bowlers, this number is somewhere in the mid-20s.</p></li>
+<li><p>Wickets per 10 overs : Built from the inverse of the bowling average. It is usually >1.5 for good strike bowlers.</p></li>
+<li><p>Overs to concede 10 boundaries : Built from the inverse of the bowler&rsquo;s pinch hitting conceding rate, with weightage for sixes.</p></li>
+</ul>
+
+
+<p>The hard part is finding ways to measure fielding/wicketkeeping performance. It was possible to find the total number of field dismissals that a player, but there&rsquo;s no way to know how many matches the player played. I only have the number of innings he batted or bowled in. It is possible that he played a match where he didn&rsquo;t bat, didn&rsquo;t bowl and didn&rsquo;t have a catch or run out credited to him.</p>
+
+<p>I need a way to quantify a player&rsquo;s field performance. And I need to see how to implement NSGA-II to draft my team.</p>
+
+<p>Updates soon.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 2]]></title>
