@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tnt | Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/tnt/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-10-26T12:43:48+05:30</updated>
+  <updated>2014-10-27T12:08:31+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -57,6 +57,7 @@ pinch_hitting = 100.0 * (fours + (1.5 * sixes)) / balls_faced
 <li><p>Overs to concede 100 runs : A number built from the inverse of the economy rate. For good bowlers, this number is somewhere in the mid-20s.</p></li>
 <li><p>Wickets per 10 overs : Built from the inverse of the bowling average. It is usually >1.5 for good strike bowlers.</p></li>
 <li><p>Overs to concede 10 boundaries : Built from the inverse of the bowler&rsquo;s pinch hitting conceding rate, with weightage for sixes.</p></li>
+<li><p>Overs to concede an extra : The inverse of extras per over.</p></li>
 </ul>
 
 

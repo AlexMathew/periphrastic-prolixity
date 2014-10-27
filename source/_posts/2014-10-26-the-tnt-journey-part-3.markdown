@@ -43,6 +43,8 @@ The standard bowling statistics require to be minimized on. So for convenience s
 
 * Overs to concede 10 boundaries : Built from the inverse of the bowler's pinch hitting conceding rate, with weightage for sixes. 
 
+* Overs to concede an extra : The inverse of extras per over.
+
 The hard part is finding ways to measure fielding/wicketkeeping performance. It was possible to find the total number of field dismissals that a player, but there's no way to know how many matches the player played. I only have the number of innings he batted or bowled in. It is possible that he played a match where he didn't bat, didn't bowl and didn't have a catch or run out credited to him. 
 
 I need a way to quantify a player's field performance. And I need to see how to implement NSGA-II to draft my team.
