@@ -29,7 +29,7 @@ Oh, Lakers. Things have been bittersweet for them. Kobe returned, Nash went down
 * GOLDEN STATE WARRIORS
 
 {% img right http://i2.cdn.turner.com/nba/nba/dam/assets/130425225210-stephen-curry-klay-thompson-iso.mobile-t1.jpg 350 350 %}
-It's their time ! I really do believe that. The Splash bros can really take this season by storm. Stephen Curry and Klay Thompson at their peaks are unstoppable. If they hit their peaks, this will turn out to be a very, very interesting season. Iggy/Harrison Barnes at SF adds a lot of fire power to the already explosive team. Expect them to go deep into the playoffs.
+It's their time ! I really do believe that. The Splash bros can really take this season by storm. Stephen Curry and Klay Thompson at their peaks are unstoppable. If they hit their peaks, this will turn out to be a very, very interesting season. Iggy/Barnes-Lee-Bogut in the frontcourt adds a lot of fire power to the already explosive team. Expect them to go deep into the playoffs.
 
 * PHOENIX SUNS
 

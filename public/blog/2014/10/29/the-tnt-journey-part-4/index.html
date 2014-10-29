@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Basketball Season Has Returned ! - Periphrastic Prolixity</title>
+  <title>The TNT Journey - Part 4 - Periphrastic Prolixity</title>
   <meta name="author" content="Alex Mathew">
 
   
-  <meta name="description" content="The countdown to the NBA season is heating up ! The preseason is done and we&rsquo;re in the final few days before the start of the regular season. I &hellip;">
+  <meta name="description" content="When you have exams and an interesting problem that you have to complete in a few days, it&rsquo;s not too cool to go down with a fever. These next &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/27/basketball-season-has-returned">
+  <link rel="canonical" href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Periphrastic Prolixity" type="application/atom+xml">
@@ -70,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">Basketball Season Has Returned !</h1>
+      <h1 class="entry-title">The TNT Journey - Part 4</h1>
     
     
       <p class="meta">
@@ -79,65 +79,97 @@
 
 
 
-<time class='entry-date' datetime='2014-10-27T01:04:34+05:30'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>1:04 am</span></time>
+<time class='entry-date' datetime='2014-10-29T09:17:35+05:30'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>9:17 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>The countdown to the NBA season is heating up ! The preseason is done and we&rsquo;re in the final few days before the start of the regular season. I&rsquo;ll be honest - I&rsquo;ve not been a huge fan for long. The 2013-14 season was the first one that I followed closely, and that was because I wanted to know the best teams to ask for transfers to in NBA2K14 MyCareer. But I was smitten by the NBA bug, and I was following developments in the season.</p>
+<div class="entry-content"><p>When you have exams and an interesting problem that you have to complete in a few days, it&rsquo;s not too cool to go down with a fever. These next couple of days are going to be a blaze with all the work. I need to get this done with.</p>
 
-<p>Now that it&rsquo;s just a few days before the start of the 2014-15 season, I thought I&rsquo;d take a shot at reviewing the rosters of all the teams, and give my opinion of how I&rsquo;d expect them to perform.</p>
+<p>Before picking the teams, I needed a way to visually represent the data I had so far. I needed to have the graphs look beautiful, and also easy to generate.</p>
+
+<p>Enter <a href="https://plot.ly">Plotly</a></p>
 
 <!--more-->
 
 
-<p>I&rsquo;ll go conference and then division-wise. Starting off.</p>
+<p>I think of it more as, the GitHub of Graphs.</p>
 
-<p>THE WESTERN CONFERENCE.</p>
+<p>I heard about Plotly during PyCon India 2014. I found it really interesting and decided to use it for any interesting project I had to work on (also because I put a Plotly sticker on my laptop, so I had to use it because I donated laptop real estate to it). Just as I was looking for ideas of things to work on, I came across TNT, so I decided that it might be a good time to start using Plotly.</p>
 
-<p>PACIFIC DIVISION.</p>
+<p>It was so much easier than I thought.</p>
+
+<p>I decided to use the <a href="https://plot.ly/python">Plotly Python API</a> for generating some visual representations of the data. The documentation is very extensive, and the examples given are usually more than enough to get you going. The best part is how easy it is to collaborate and work on the graphs across languages/tools - when you have the link to your graph, all you have to do is add a .py or .r or .js or .m to work with the graph in Python, R, Javascript or Matlab. The link with .png gives the graph as an image, and .html gives an iframe that embeds the graph in a web page. How cool is that !</p>
+
+<p>I decided to go with using iframes mainly because I wouldn&rsquo;t have to edit the webpage every time I edited the graph. It would be really useful when I worked on my data often.</p>
+
+<p>So I went ahead and built histograms for each of the 7 batting/bowling statistics that I mentioned in the <a href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/">previous post</a>.</p>
+
+<p>Starting off with the batting stats.</p>
 
 <ul>
-<li>LOS ANGELES CLIPPERS</li>
+<li>Runs per wicket</li>
 </ul>
 
 
-<p><img class="right" src="http://hoops-nation.com/wp-content/uploads/Paul-Griffin-Jordan.jpg" width="350" height="350">
-LOB CITY FTW ! \m/ (Sorry if I seem biased here) The onus will be on these three guys. If you ask me, the Clippers&#8217; performance will be directly dependent on the output they get out of Chris Paul, Blake Griffin and DeAndre Jordan. The effect of having Doc Rivers already showed last season, with improved defence and Griffin improving as a shooter. If CP3 stays healthy throughout the season, the Clippers are sure playoff contenders. <a href="http://www.sbnation.com/2014/10/8/6946249/blake-griffin-jumper-clippers-breakdown">Griffin looked threatening as a shooter during the preseason</a> and that should make things very things. The wild cards here though will be Jamal Crawford and Spencer Hawes. Crawford has been a consistent contributor off the bench, and if that continues, it will be raining heavily from deep. Hawes is a brilliant off-season signing for the Clippers, and he has turned out to be a very efficient rotation player for DJ. My heart wants them to win the title, but my mind says they will be conference semifinalists, or finalists, if things go very well.</p>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/1.embed" width="600" height="400"></iframe>
+
 
 <ul>
-<li>LOS ANGELES LAKERS</li>
+<li>Runs per 100 balls</li>
 </ul>
 
 
-<p><img class="left" src="http://standingosports.com/main/wp-content/uploads/2014/09/kobebryant11.jpg" width="350" height="350">
-Oh, Lakers. Things have been bittersweet for them. Kobe returned, Nash went down again. But I think the team can move past at it and focus on the season ahead. The effectiveness of the Boozer-Gasol trade will be on display. I think Boozer is more useful on the frontcourt. The wild card for the Lakers will be Jeremy Lin off the bench. If Linsanity strikes LA, it&rsquo;ll be huge for the Lakers. Will they reach the playoffs ? Depends on if Kobe lives up to the hype of his return.</p>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/2.embed" width="600" height="400"></iframe>
+
 
 <ul>
-<li>GOLDEN STATE WARRIORS</li>
+<li>Pinch hitting rate</li>
 </ul>
 
 
-<p><img class="right" src="http://i2.cdn.turner.com/nba/nba/dam/assets/130425225210-stephen-curry-klay-thompson-iso.mobile-t1.jpg" width="350" height="350">
-It&rsquo;s their time ! I really do believe that. The Splash bros can really take this season by storm. Stephen Curry and Klay Thompson at their peaks are unstoppable. If they hit their peaks, this will turn out to be a very, very interesting season. Iggy/Barnes-Lee-Bogut in the frontcourt adds a lot of fire power to the already explosive team. Expect them to go deep into the playoffs.</p>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/3.embed" width="600" height="400"></iframe>
+
+
+<p>The bowling stats.</p>
 
 <ul>
-<li>PHOENIX SUNS</li>
+<li>Overs to concede 100 runs</li>
 </ul>
 
 
-<p><img class="left" src="http://img.bleacherreport.net/img/images/photos/002/834/508/2fa0b16c66eca7933cf95c1fb3e28186_crop_north.jpg?w=630&h=420&q=75" width="350" height="350">
-Expect some entertainment here, with Gerald Green. Some fun dunks ahead. Eric Bledsoe holds the key to their performance. In my opinion, he&rsquo;ll have to be the one carrying a major part of the load. It&rsquo;ll be fun to see two pairs of brothers in action here - the Dragic brothers and the Morris twins. Goran and Zoran Dragic had a good FIBA World Cup - the Suns would love for them to carry that on here.</p>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/4.embed" width="600" height="400"></iframe>
+
 
 <ul>
-<li>SACRAMENTO KINGS</li>
+<li>Wickets per 10 overs</li>
 </ul>
 
 
-<p><img class="right" src="http://www.rantsports.com/clubhouse/files/2014/07/Sim-Bhullar-India-NBA-Sacramento-Kings-e1405038740695.jpg" width="350" height="350">
-Don&rsquo;t expect much here. This team doesn&rsquo;t look like much of a playoff contender. Looks more like a team that&rsquo;ll be struggling to not be at the bottom of the conference. Personally, the only reason to follow this team will be to see if they give Sim Bhullar a game. Also, I&rsquo;ll miss Darren Collison. The Clippers comeback against OKC in the Conf SFG4 will be remembered.</p>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/5.embed" width="600" height="400"></iframe>
+
+
+<ul>
+<li>Overs to concede 10 boundaries</li>
+</ul>
+
+
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/6.embed" width="600" height="400"></iframe>
+
+
+<ul>
+<li>Overs to concede an extra</li>
+</ul>
+
+
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/7.embed" width="600" height="400"></iframe>
+
+
+<p>Now, this is useful to notice how I can&rsquo;t use the entire player dataset to generate my team, because it would end up skewed in favour of players who rarely played. A player who has bowled only one over in the given timeframe, and conceded just 1 run along with taking a wicket will have statistics like 100 overs to concede 100 runs and 10 wickets per 10 overs - which is obviously messed up. So I need to set a minimum number of innings that a player should have batted or bowled in, if the player has to be considered for the team. I&rsquo;m setting that number at 33 - I&rsquo;ll see how it turns out and make changes if I have to.</p>
+
+<p>I&rsquo;ll continue using Plotly to represent other statistics of the generated team. And that is what I&rsquo;ll have to start working on now.</p>
 </div>
 
 
@@ -153,12 +185,12 @@ Don&rsquo;t expect much here. This team doesn&rsquo;t look like much of a playof
 
 
 
-<time class='entry-date' datetime='2014-10-27T01:04:34+05:30'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>1:04 am</span></time>
+<time class='entry-date' datetime='2014-10-29T09:17:35+05:30'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>9:17 am</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/nba/'>nba</a>
+    <a class='category' href='/blog/categories/latentview/'>latentview</a>, <a class='category' href='/blog/categories/tnt/'>tnt</a>
   
 </span>
 
@@ -167,7 +199,7 @@ Don&rsquo;t expect much here. This team doesn&rsquo;t look like much of a playof
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/" data-via="alxmth03" data-counturl="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/" data-via="alxmth03" data-counturl="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -180,10 +212,8 @@ Don&rsquo;t expect much here. This team doesn&rsquo;t look like much of a playof
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/10/26/the-tnt-journey-part-3/" title="Previous Post: The TNT Journey - Part 3">&laquo; The TNT Journey - Part 3</a>
+        <a class="basic-alignment left" href="/blog/2014/10/27/basketball-season-has-returned/" title="Previous Post: Basketball season has returned !">&laquo; Basketball season has returned !</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/10/29/the-tnt-journey-part-4/" title="Next Post: The TNT Journey - Part 4">The TNT Journey - Part 4 &raquo;</a>
       
     </p>
   </footer>
