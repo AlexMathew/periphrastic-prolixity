@@ -57,6 +57,6 @@ The bowling stats.
 
 <iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/7.embed" width="600" height="400"></iframe>
 
-Now, this is useful to notice how I can't use the entire player dataset to generate my team, because it would end up skewed in favour of players who rarely played. A player who has bowled only one over in the given timeframe, and conceded just 1 run along with taking a wicket will have statistics like 100 overs to concede 100 runs and 10 wickets per 10 overs - which is obviously messed up. So I need to set a minimum number of innings that a player should have batted or bowled in, if the player has to be considered for the team. I'm setting that number at 33 - I'll see how it turns out and make changes if I have to. 
+Now, this is useful to notice how I can't use the entire player dataset to generate my team, because it would end up skewed in favour of players who rarely played. A player who has bowled only one over in the given timeframe, and conceded just 1 run along with taking a wicket will have statistics like 100 overs to concede 100 runs and 10 wickets per 10 overs - which is obviously messed up. So I need to set a minimum number of innings that a player should have batted or bowled in, if the player has to be considered for the team. I'm setting that number at 23 - I'll see how it turns out and make changes if I have to. 
 
 I'll continue using Plotly to represent other statistics of the generated team. And that is what I'll have to start working on now.

@@ -4,7 +4,7 @@
   <title><![CDATA[Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-10-29T10:54:19+05:30</updated>
+  <updated>2014-10-29T11:06:41+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -99,7 +99,7 @@
 <iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/7.embed" width="600" height="400"></iframe>
 
 
-<p>Now, this is useful to notice how I can&rsquo;t use the entire player dataset to generate my team, because it would end up skewed in favour of players who rarely played. A player who has bowled only one over in the given timeframe, and conceded just 1 run along with taking a wicket will have statistics like 100 overs to concede 100 runs and 10 wickets per 10 overs - which is obviously messed up. So I need to set a minimum number of innings that a player should have batted or bowled in, if the player has to be considered for the team. I&rsquo;m setting that number at 33 - I&rsquo;ll see how it turns out and make changes if I have to.</p>
+<p>Now, this is useful to notice how I can&rsquo;t use the entire player dataset to generate my team, because it would end up skewed in favour of players who rarely played. A player who has bowled only one over in the given timeframe, and conceded just 1 run along with taking a wicket will have statistics like 100 overs to concede 100 runs and 10 wickets per 10 overs - which is obviously messed up. So I need to set a minimum number of innings that a player should have batted or bowled in, if the player has to be considered for the team. I&rsquo;m setting that number at 23 - I&rsquo;ll see how it turns out and make changes if I have to.</p>
 
 <p>I&rsquo;ll continue using Plotly to represent other statistics of the generated team. And that is what I&rsquo;ll have to start working on now.</p>
 ]]></content>
