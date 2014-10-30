@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Latentview | Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/latentview/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-10-29T11:06:41+05:30</updated>
+  <updated>2014-10-31T02:10:29+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The TNT Journey - Part 5]]></title>
+    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5/"/>
+    <updated>2014-10-31T00:32:23+05:30</updated>
+    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5</id>
+    <content type="html"><![CDATA[<p>With all the work looking at the player side of stuff, I didn&rsquo;t spend too much time on the venue-based side of the problem. So I decided to get that done. What can sides expect in Australia and New Zealand ?</p>
+
+<p><a href="http://plot.ly">Plotly</a> continues to impress with its usefulness.</p>
+
+<!--more-->
+
+
+<p>I couldn&rsquo;t come up with any really useful statistical measure to judge the performance in a particular venue, so I decided to go with three basic numbers - runs per 50 overs, wickets per 50 overs and boundaries per 50 overs - and put them in a 3D scatter plot (which turned out to be pretty easy with Plotly).</p>
+
+<p>It was back to MongoDB&rsquo;s aggregation framework to put this together. I went with the same workflow that I had with aggregating player data - write the aggregation commands, use a Python script to create a new collection with all the data.</p>
+
+<p>There were 89 unique venues in the given dataset. However, we couldn&rsquo;t go with the entire set because 30 of those venues hosted only one match, and one match is definitely not enough to observe a pattern. For example, there was only one match played at the Chinnaswamy Stadium and batsmen went all berzerk during that match - that also included Rohit Sharma&rsquo;s 209. But not all matches at the Chinnaswamy produce 600+ run spectacles. So there should be a minimum number of matches that a venue should have hosted if it has to be considered. Going with a minimum of 3 matches, we have a list of 40 venues (which notably exclude MAC, Wankhede and Eden Gardens).</p>
+
+<p>Working with these 40 venues, we set up a collection which contains the three stats that we are considering for each venue. Now it&rsquo;s just a matter of setting up the 3D scatter plot on Plotly. Since we are grouping by country, we need the country that the venue is located in. This was the annoyingly hard part - manually finding the country.</p>
+
+<p>Now with some basic statistics on the data I have, and the generated 3D scatter plots, we can make some conclusions.</p>
+
+<p>The scatter plot with all the countries which have venues in the dataset.</p>
+
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/10.embed" width="800" height="800"></iframe>
+
+
+<p>Specifically with Australia and New Zealand.</p>
+
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/11.embed" width="800" height="800"></iframe>
+
+
+<p>Across the 9 venues in Australia and New Zealand, the mean 50 over score increases by more than 10 to reach a score of 247, while the mean wickets/50overs remains almost the same - around 7.5. So expect many lower-order pinch hitters to make cameos. With 300+ scores becoming commonplace in ODI cricket, expect this mean 50 over score to increase over the course of the World Cup. Expect the average of 25 boundaries/50overs only from mediocre teams - if a team really has to make a mark, they&rsquo;ll have to step up that number. This World Cup is a funny mix because Australia is known for its longer boundaries, while New Zealand is known for its shorter boundaries. Batting fests are extremely possible in NZ, while Australia will host more balanced battles.</p>
+
+<p>More insights soon.</p>
+
+<p>I&rsquo;ll also continue working on finding a good way to build the team.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 4]]></title>
@@ -251,38 +291,6 @@ pinch_hitting = 100.0 * (fours + (1.5 * sixes)) / balls_faced
 <p>Now, step 2. I need to put this together and build some performance measures.</p>
 
 <p>Part 2 of this series will be up when I have some significant progress on that front.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Cause I'm TNT, I'm Dynamite]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/cause-im-tnt/"/>
-    <updated>2014-10-15T23:33:31+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/cause-im-tnt</id>
-    <content type="html"><![CDATA[<p>(Yes, I just made an AC/DC reference)</p>
-
-<p>First off, huge shout out to LatentView Analytics. Thank you for the job placement offer ! It&rsquo;s given me so much peace of mind, and in turn, freedom to experiment with new stuff.</p>
-
-<p>About a week back, I heard about LatentView&rsquo;s new event for final and pre-final years - &ldquo;The Number Thing&rdquo;. Or, TNT. Perfect experimentation ground.</p>
-
-<!--more-->
-
-
-<p>All the problems were interesting. It was just a matter of picking the right one.</p>
-
-<p>Cricket stat analysis.
-Crime pattern analysis.
-Text analysis.</p>
-
-<p>One sports analytics question, and I was sold. That was my choice. Cricket Craze.</p>
-
-<p>I knew it would be a lot of fun. I also expected it to be challenging. What I didn&rsquo;t expect was a 175373-row dataset. I knew this would be a whole new challenge for me. This was the biggest dataset I&rsquo;ve had to work with so far. I had to get new tools in my arsenal to tackle this. This was going to be a crazy ride.</p>
-
-<p>I decided to blog about what my approach to this problem. Think of it as documentation. Over the next few posts, I&rsquo;ll break down my approach - from the initial steps, all the way down to the final result (hopefully!).</p>
-
-<p>If you&rsquo;re reading this and think there&rsquo;s a better way than the approach I&rsquo;ve taken, do give your suggestions ! Also, suggest resources to get started with them. You can write to me at alexmathew003[at]gmail[dot]com</p>
-
-<p>Check out the &ldquo;TNT&rdquo; category on the blog to read the posts. I&rsquo;ll make regular updates as I make progress.</p>
 ]]></content>
   </entry>
   
