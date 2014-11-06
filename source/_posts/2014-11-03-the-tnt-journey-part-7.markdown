@@ -28,15 +28,15 @@ BENCH - Gautam Gambhir, Manoj Tiwary, Vinay Kumar, Umesh Yadav
 
 I made a bubble chart comparing batsmen's ERA and milestone values, and multiple bar charts to compare bowler stats across various over groups. (Thank you, [Plotly](http://plot.ly))
 
-<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/16.embed" width="600" height="400"></iframe>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/16.embed" width="750" height="500"></iframe>
 
-<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/23.embed" width="600" height="400"></iframe>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/23.embed" width="750" height="500"></iframe>
 
-<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/24.embed" width="600" height="400"></iframe>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/24.embed" width="750" height="500"></iframe>
 
-<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/25.embed" width="600" height="400"></iframe>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/25.embed" width="750" height="500"></iframe>
 
-<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/27.embed" width="600" height="400"></iframe>
+<iframe frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~AlexMathew/27.embed" width="750" height="500"></iframe>
 
 Insights about the teams and the related stats :
 
