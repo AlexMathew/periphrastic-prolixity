@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Tnt | Periphrastic Prolixity]]></title>
-  <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/tnt/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Plotly | Periphrastic Prolixity]]></title>
+  <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/plotly/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
   <updated>2014-11-06T19:12:32+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
@@ -87,51 +87,6 @@ Virender Sehwag, Shikhar Dhawan, Virat Kohli, Rohit Sharma, Suresh Raina, MS Dho
 <p>So that&rsquo;s it from me. This has been an amazing 3 weeks with this problem. Somehow, being awake felt worthwhile.</p>
 
 <p>Thank you LatentView.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The TNT Journey - Part 6]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6/"/>
-    <updated>2014-11-01T21:06:27+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6</id>
-    <content type="html"><![CDATA[<p>31 October 2014. 7 PM. Struggling because I don&rsquo;t have an eye for design and I didn&rsquo;t know what to do about the infographic. Struggling because I wasn&rsquo;t satisfied with the result I got with this. And that was when rescue arrived.</p>
-
-<p>Deadline extension.</p>
-
-<p>I have never been this happy about a deadline extension. These two extra days give me a lot of time to fix what I&rsquo;d done. And to fix the unsatisfactory results I had, I had one choice - to change the logic I was using.</p>
-
-<p>I had to start from scratch.</p>
-
-<!--more-->
-
-
-<p>The two days gave me a lot of time to fix the stats I was considering for the selection. Yeah, I had a semester practical exam at the end of those two days. But still, priorities.</p>
-
-<p>So first, there were two things that happened before the initial deadline that made me unhappy with my results.</p>
-
-<ul>
-<li>I couldn&rsquo;t get the genetic algorithm thing working. I had to manually pick the best players for each category.</li>
-<li>I had to settle on using just the basic stats I had to pick the teams.</li>
-</ul>
-
-
-<p>I ended up with a decent All Star team - Watson, Amla, Kohli, AB, George Bailey, Kane Williamson, MSD, Andre Russell, Steyn, Rangana Herath and Anderson. But the Indian team I got had Praveen Kumar in it. Not Bhuvaneshwar Kumar, not anybody else who&rsquo;s ever bowled for India. I got a guy who&rsquo;s been &ldquo;out of action&rdquo; for quite a while. I knew this thing was messed up. But I didn&rsquo;t have a lot of time to fix it, so I went ahead with it.</p>
-
-<p>So when I heard about the deadline extension, I knew had time to right these wrongs. I got to reading articles on Cricinfo about suggestions for new statistics (I can&rsquo;t believe I didn&rsquo;t do that before). So with help from a few friends who reviewed the teams I was generating and suggested new factors to consider (thank you Pranav, Lakshmi and Arjun), I picked a bunch of new factors to consider.</p>
-
-<ul>
-<li><p>Mike Hussey&rsquo;s &ldquo;Magic Number&rdquo;: I read about this number that Mike Hussey suggested for comparing T20 batsmen. A good T20 batsman would have (Average + Strike Rate) > 160. This means, a batsman scores an average of 40 runs at a rate 120 runs in 100 balls is as valuable as a batsmen who scores an average of 20 at 140. I didn&rsquo;t try to judge ODI batsmen in terms of a set number like 160, but I fixed a mistake that I did the last time - add the stats rather than find their product. Normalize the stats to a scale based on the weight of the stat, and add them.</p></li>
-<li><p>Milestone values : This number is suggestive of the batsman&rsquo;s ability to put up big scores. I used MongoDB aggregation to get a list of individual innings scores for each batsman. From this list, assign incremental scores to milestone innings (50-74, 75-89, 90-99, 100-124, etc.). Assign a 5-point score for the ratio of 50+ innings and total innings, and a 10+ score for the ratio of 100+ innings and 50+ innings. The sum of all these values gives the overall milestone value of the batsman.</p></li>
-<li><p>Estimated Runs Added (ERA): This number feels so Sabermetrics-like. It gives how much the batsman scores more than the average runs scored at that rate. For a given batsman&rsquo;s average and strike rate, find the number of balls he would take to score that average. Also, find the runs scored for the same number of balls on the overall dataset average strike rate. The difference between the two gives a batsman&rsquo;s ERA.
-ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))</p></li>
-<li><p>Over group analysis: I got this idea from an article on Cricinfo. The basic idea behind this is that a bowler&rsquo;s performance in different sections of the innings should be weighted differently. For example, a good economy rate in the death overs should be weighted more than a good economy rate in the middle overs. A team&rsquo;s innings is broken into 3 parts – the powerplay overs (overs 1-15), the middle overs (overs 16-40) and the death overs (overs 41-50). Using MongoDB aggregation, built collections with lists of runs conceded on each ball, and number of wickets taken in each section. For the runs conceded section, the total runs conceded (batsman runs + extras) is considered, thus redefining it as runs conceded to the team. For each bowler who has bowled a certain number of balls in each section, positive or negative scores were allotted for different stats compared to the overall average – dots/over, boundaries/over, economy rate, wickets/over. Weights were given depending on the over section. For example, more weight is given to dots/over in the death than in the middle overs. This basically considers that it is harder to bowl in the death than in any other point of the innings.</p></li>
-</ul>
-
-
-<p>With this improved set of stats, I was hopeful of better results in terms of the team I got.</p>
-
-<p>Analysis on the teams in the next post. The final post of the series.</p>
 ]]></content>
   </entry>
   
@@ -264,62 +219,6 @@ ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))
 <p>Now, this is useful to notice how I can&rsquo;t use the entire player dataset to generate my team, because it would end up skewed in favour of players who rarely played. A player who has bowled only one over in the given timeframe, and conceded just 1 run along with taking a wicket will have statistics like 100 overs to concede 100 runs and 10 wickets per 10 overs - which is obviously messed up. So I need to set a minimum number of innings that a player should have batted or bowled in, if the player has to be considered for the team. I&rsquo;m setting that number at 23 - I&rsquo;ll see how it turns out and make changes if I have to.</p>
 
 <p>I&rsquo;ll continue using Plotly to represent other statistics of the generated team. And that is what I&rsquo;ll have to start working on now.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The TNT Journey - Part 3]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/"/>
-    <updated>2014-10-26T11:27:57+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3</id>
-    <content type="html"><![CDATA[<p>Records, exams, assignments. The absolute worst time possible. Indian education will not improve till they get rid of this concept of maintaining a formal record book where you write unnecessary garbage. In the middle of all this, finding time to work on the TNT problem has been hard. But I&rsquo;ve been reading, trying out stuff and making some gradual progress. And of late, I&rsquo;ve approached this in a different way. Advice from a professor gave me an interesting way to go about this problem. Implementing has been hard, but the idea behind it is brilliant.</p>
-
-<!--more-->
-
-
-<p>&ldquo;Don&rsquo;t look for individual best performers. Put the team together and see the overall rating of the team. Pick the best team, not a collection of the best players&rdquo;. I had never thought of that, really. The best players statistic-wise could all be batsmen, and I&rsquo;d end up with a batting-heavy team with a poor bowling attack. So I had to find a way to strike a balance, by considering the team as a whole. And I considered using my professor&rsquo;s advice - genetic algorithms.</p>
-
-<p>The idea was simple. From this <a href="http://www.obitko.com/tutorials/genetic-algorithms/ga-basic-description.php">basic introductory post about GA</a>,</p>
-
-<blockquote><p>Algorithm is started with a set of solutions (represented by chromosomes) called population. Solutions from one population are taken and used to form a new population. This is motivated by a hope, that the new population will be better than the old one. Solutions which are selected to form new solutions (offspring) are selected according to their fitness - the more suitable they are the more chances they have to reproduce.</p></blockquote>
-
-<p>I found a bunch of research papers, where people used GAs to do this exact thing - build fantasy cricket teams. The concept seemed simple enough - pick the parameters you want to maximise on, and implement the algorithm.</p>
-
-<p>Implementing seemed like a bitch. The NSGA-II algorithm was an extremely computation-intensive algorithm that involved many iterations, so I knew I couldn&rsquo;t write the algorithm from scratch and expect to get an optimized implementation. I had either go for Python genetic programming libraries, or find someone else&rsquo;s implementation of the algorithm. I checked out <a href="https://code.google.com/p/deap/">Deap</a> - it looked like it could effectively give me what I needed. But setting up was really hard. I couldn&rsquo;t make much progress even after hours of reading the docs. So, Deap is on hold.</p>
-
-<p>I found <a href="https://code.google.com/p/pynsga2/">another implementation of NSGA-II</a> that used multiprocessing to improve the speed of implementation. It required the fitness to be in a separate file - I need to try it out and see how that works.</p>
-
-<p>So for now, it&rsquo;s still an experimentation phase with the implementation of the algorithm. I took some time out to decide the parameters I&rsquo;d want to maximise the fitness on.</p>
-
-<p>BATSMEN :</p>
-
-<ul>
-<li><p>Runs per wicket : The batting average of the batsman. For good batsmen in the current cricketing world, this number hovers around 40.</p></li>
-<li><p>Runs per 100 balls : The strike rate of the batsman. A strike rate of >85 is generally considered very good. A batsman with a 100+ strike rate is an ideal pinch hitter to finish the innings.</p></li>
-<li><p>Pinch hitting rate : Boundaries scored per 100 balls, with more weight given to sixes. So effectively,
-<code>python
-pinch_hitting = 100.0 * (fours + (1.5 * sixes)) / balls_faced
-</code></p></li>
-</ul>
-
-
-<p>BOWLERS :</p>
-
-<p>The standard bowling statistics require to be minimized on. So for convenience sake, I took the inverse of these numbers, so I could maximise on them.</p>
-
-<ul>
-<li><p>Overs to concede 100 runs : A number built from the inverse of the economy rate. For good bowlers, this number is somewhere in the mid-20s.</p></li>
-<li><p>Wickets per 10 overs : Built from the inverse of the bowling average. It is usually >1.5 for good strike bowlers.</p></li>
-<li><p>Overs to concede 10 boundaries : Built from the inverse of the bowler&rsquo;s pinch hitting conceding rate, with weightage for sixes.</p></li>
-<li><p>Overs to concede an extra : The inverse of extras per over.</p></li>
-</ul>
-
-
-<p>The hard part is finding ways to measure fielding/wicketkeeping performance. It was possible to find the total number of field dismissals that a player, but there&rsquo;s no way to know how many matches the player played. I only have the number of innings he batted or bowled in. It is possible that he played a match where he didn&rsquo;t bat, didn&rsquo;t bowl and didn&rsquo;t have a catch or run out credited to him.</p>
-
-<p>I need a way to quantify a player&rsquo;s field performance. And I need to see how to implement NSGA-II to draft my team.</p>
-
-<p>Updates soon.</p>
 ]]></content>
   </entry>
   

@@ -3,7 +3,7 @@ layout: post
 title: "The TNT Journey - Part 4"
 date: 2014-10-29 09:17:35 +0530
 comments: true
-categories: ["latentview", "tnt"]
+categories: ["latentview", "tnt", "plotly"]
 ---
 When you have exams and an interesting problem that you have to complete in a few days, it's not too cool to go down with a fever. These next couple of days are going to be a blaze with all the work. I need to get this done with.
 

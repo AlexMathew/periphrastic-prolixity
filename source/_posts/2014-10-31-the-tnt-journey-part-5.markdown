@@ -3,7 +3,7 @@ layout: post
 title: "The TNT Journey - Part 5"
 date: 2014-10-31 00:32:23 +0530
 comments: true
-categories: ["latentview", "tnt"]
+categories: ["latentview", "tnt", "plotly"]
 ---
 With all the work looking at the player side of stuff, I didn't spend too much time on the venue-based side of the problem. So I decided to get that done. What can sides expect in Australia and New Zealand ? 
 

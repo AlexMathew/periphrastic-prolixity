@@ -3,7 +3,7 @@ layout: post
 title: "The TNT Journey - Part 7"
 date: 2014-11-03 04:56:57 +0530
 comments: true
-categories: ["latentview", "tnt"]
+categories: ["latentview", "tnt", "plotly"]
 ---
 A new approach. Better results.
 
