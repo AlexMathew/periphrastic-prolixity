@@ -4,7 +4,7 @@
   <title><![CDATA[Periphrastic Prolixity]]></title>
   <link href="http://periphrastic-prolixity.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2014-11-08T17:05:27+05:30</updated>
+  <updated>2015-01-03T22:57:04+05:30</updated>
   <id>http://periphrastic-prolixity.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -12,6 +12,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What I Learned From My First Hackathon]]></title>
+    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/"/>
+    <updated>2014-12-09T18:54:53+05:30</updated>
+    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon</id>
+    <content type="html"><![CDATA[<p>I finally got to do something I&rsquo;ve always wanted to. I took part in a hackathon.</p>
+
+<p>The <a href="http://koding.com/Hackathon">Koding hackathon</a> was a 48-hour online hackathon, which happened over the first weekend of December 2014 (not going for specific dates, because timezones). For me, it was a great choice for a first hackathon because it helped eliminate the biggest problem that stopped me from taking part in a hackathon so far - getting to the venue. This was in the middle of my holidays, and I could work from home. Everything felt right. I managed to complete my working web app, &ldquo;<a href="http://github.com/AlexMathew/g33k">G33K</a>&rdquo;, in the 48 hours (I did screw up big time, though). It was a great sense of accomplishment knowing that I had the most productive 48 hours I&rsquo;ve had in a long time. And over that weekend, I learned a lot.</p>
+
+<p>Here&rsquo;s what I learned from my first hackathon.</p>
+
+<!--more-->
+
+
+<ul>
+<li><strong>Get a team</strong></li>
+</ul>
+
+
+<p>Do <strong>NOT</strong> go for a hackathon solo, no matter how good you are. It&rsquo;s always better to have people to share the load with. I didn&rsquo;t expect to get shortlisted to the hackathon, so I didn&rsquo;t talk to anyone about teaming up with them. Once I got the email from Koding that I was in, I scrambled to find a teammate. I asked a few of my friends, but none of them were free for the weekend, and that&rsquo;s when I decided to go solo for the hackathon. It was fun to try to take the whole thing alone, but after a while it gets to you. You need a team to share the work and to share the load of the pressure.</p>
+
+<ul>
+<li><strong>Find a comfortable position to work</strong></li>
+</ul>
+
+
+<p>I could barely move my neck after the 48 hours, and I&rsquo;m not even 21. This is more than just about a hackathon - this is something I should have in mind considering I may be working long hours very often. I need to find the most comfortable and physically ideal position for working, and incorporate it.</p>
+
+<ul>
+<li><strong>Maintain your todo list</strong></li>
+</ul>
+
+
+<p>Lack of sleep is not an ideal situation to be in while working, but it&rsquo;s something you&rsquo;re forced into during a hackathon. So when you&rsquo;re sleep-deprived, it&rsquo;s not too easy to remember what you have to do or how you planned to do them. Have a notepad or use post-it notes to keep track of everything you need to get done. This is a great way to avoid forgetting to put in some feature that you originally planned to.</p>
+
+<ul>
+<li><strong>Be comfortable with your stack</strong></li>
+</ul>
+
+
+<p>There are two ways you can decide a stack for your hack - use something you are familiar with, or experiment with something you&rsquo;ve always wanted to try out. A hackathon is a great platform to learn new skills or to cement expertise in existing ones. But either way, it&rsquo;s good to have a basic working idea of everything you will be using, so you don&rsquo;t waste time learning from scratch during the hackathon.</p>
+
+<ul>
+<li><strong>Make sure you don&rsquo;t make noob mistakes</strong></li>
+</ul>
+
+
+<p>Sleep deprivation does bad things to you. Very bad things. In a sudden moment of retardness, you could end up making stupid mistakes that you notice too late. There&rsquo;s not a lot you can do to &ldquo;avoid&rdquo; this - just hope you keep your sanity through the entire duration of the hackathon.</p>
+
+<ul>
+<li><strong>Be sure about your deployment options</strong></li>
+</ul>
+
+
+<p>The PaaS industry gives you so many options. <a href="http://heroku.com">Heroku</a> is my personal favourite. You could also go for extremely popular options, like Google App Engine. But in some cases, you will have to improvise - case in point, the Koding Hackathon. The hackathon required participants to host their apps on Koding VMs. That meant I had to think about Apache or Nginx and all that stuff, in the last 2 hours of the hackathon. It was especially hard because I never had to worry about such stuff before. I managed to get it done (barely!), but it made me realize that it is necessary to have some basic knowledge about such sysadmin stuff.</p>
+
+<ul>
+<li><strong>Get help as soon as possible</strong></li>
+</ul>
+
+
+<p>During a hackathon, you definitely do not have time to stay stuck on a problem for too long. Get help as soon as possible. Ask people around, check StackOverflow or other answers pages and check the docs/FAQs again. If it&rsquo;s a problem with a particular service, message their support team or send them a tweet. Good services have an active service/support team that will respond immediately. Get your problem sorted out quickly and get back to work !</p>
+
+<hr>
+
+
+<p>Getting through till the second round of judging is a really huge achievement, given how much I had to scramble to put this together. I know where I messed up, so I know quite well what I have to fix. I plan to continue working on G33K - fix up my mistakes, add new features and deploy it.</p>
+
+<p>I learned a lot from this hackathon, and it also gave me an awesome side-project to work on.</p>
+
+<p><strong>Coming soon : #G33K by Team #TheY2KProblem</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 7]]></title>

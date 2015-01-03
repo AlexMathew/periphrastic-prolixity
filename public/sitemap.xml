@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://periphrastic-prolixity.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/</loc>
+    
+    <lastmod>2014-12-09T18:54:53+05:30</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://periphrastic-prolixity.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7/</loc>
     
     <lastmod>2014-11-03T04:56:57+05:30</lastmod>
@@ -85,14 +93,14 @@
   
   <url>
     <loc>http://periphrastic-prolixity.herokuapp.com/</loc>
-    <lastmod>2014-11-08T17:05:27+05:30</lastmod>
+    <lastmod>2015-01-03T22:57:04+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://periphrastic-prolixity.herokuapp.com/blog/archives/</loc>
-    <lastmod>2014-11-08T17:05:27+05:30</lastmod>
+    <lastmod>2015-01-03T22:57:04+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
