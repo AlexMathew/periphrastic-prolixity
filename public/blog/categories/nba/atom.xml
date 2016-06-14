@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Nba | Periphrastic Prolixity]]></title>
-  <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/nba/atom.xml" rel="self"/>
-  <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2016-06-14T13:24:09+05:30</updated>
-  <id>http://periphrastic-prolixity.herokuapp.com/</id>
+  <title><![CDATA[Category: Nba | Periphrasis]]></title>
+  <link href="http://periphrasis.herokuapp.com/blog/categories/nba/atom.xml" rel="self"/>
+  <link href="http://periphrasis.herokuapp.com/"/>
+  <updated>2016-06-14T13:42:03+05:30</updated>
+  <id>http://periphrasis.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
     <email><![CDATA[alexmathew003@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Basketball Season Has Returned !]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/"/>
     <updated>2014-10-27T01:04:34+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/27/basketball-season-has-returned</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/27/basketball-season-has-returned</id>
     <content type="html"><![CDATA[<p>The countdown to the NBA season is heating up ! The preseason is done and we&rsquo;re in the final few days before the start of the regular season. I&rsquo;ll be honest - I&rsquo;ve not been a huge fan for long. The 2013-14 season was the first one that I followed closely, and that was because I wanted to know the best teams to ask for transfers to in NBA2K14 MyCareer. But I was smitten by the NBA bug, and I was following developments in the season.</p>
 
 <p>Now that it&rsquo;s just a few days before the start of the 2014-15 season, I thought I&rsquo;d take a shot at reviewing the rosters of all the teams, and give my opinion of how I&rsquo;d expect them to perform.</p>

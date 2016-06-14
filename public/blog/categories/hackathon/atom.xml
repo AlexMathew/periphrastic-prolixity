@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Hackathon | Periphrastic Prolixity]]></title>
-  <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/hackathon/atom.xml" rel="self"/>
-  <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2016-06-14T13:24:09+05:30</updated>
-  <id>http://periphrastic-prolixity.herokuapp.com/</id>
+  <title><![CDATA[Category: Hackathon | Periphrasis]]></title>
+  <link href="http://periphrasis.herokuapp.com/blog/categories/hackathon/atom.xml" rel="self"/>
+  <link href="http://periphrasis.herokuapp.com/"/>
+  <updated>2016-06-14T13:42:03+05:30</updated>
+  <id>http://periphrasis.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
     <email><![CDATA[alexmathew003@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[What I Learned From My First Hackathon]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/"/>
     <updated>2014-12-09T18:54:53+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon</id>
     <content type="html"><![CDATA[<p>I finally got to do something I&rsquo;ve always wanted to. I took part in a hackathon.</p>
 
 <p>The <a href="http://koding.com/Hackathon">Koding hackathon</a> was a 48-hour online hackathon, which happened over the first weekend of December 2014 (not going for specific dates, because timezones). For me, it was a great choice for a first hackathon because it helped eliminate the biggest problem that stopped me from taking part in a hackathon so far - getting to the venue. This was in the middle of my holidays, and I could work from home. Everything felt right. I managed to complete my working web app, &ldquo;<a href="http://github.com/AlexMathew/g33k">G33K</a>&rdquo;, in the 48 hours (I did screw up big time, though). It was a great sense of accomplishment knowing that I had the most productive 48 hours I&rsquo;ve had in a long time. And over that weekend, I learned a lot.</p>

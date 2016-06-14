@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Periphrastic Prolixity]]></title>
-  <link href="http://periphrastic-prolixity.herokuapp.com/atom.xml" rel="self"/>
-  <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2016-06-14T13:24:09+05:30</updated>
-  <id>http://periphrastic-prolixity.herokuapp.com/</id>
+  <title><![CDATA[Periphrasis]]></title>
+  <link href="http://periphrasis.herokuapp.com/atom.xml" rel="self"/>
+  <link href="http://periphrasis.herokuapp.com/"/>
+  <updated>2016-06-14T13:42:03+05:30</updated>
+  <id>http://periphrasis.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
     <email><![CDATA[alexmathew003@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[What I Learned From My First Hackathon]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/"/>
     <updated>2014-12-09T18:54:53+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon</id>
     <content type="html"><![CDATA[<p>I finally got to do something I&rsquo;ve always wanted to. I took part in a hackathon.</p>
 
 <p>The <a href="http://koding.com/Hackathon">Koding hackathon</a> was a 48-hour online hackathon, which happened over the first weekend of December 2014 (not going for specific dates, because timezones). For me, it was a great choice for a first hackathon because it helped eliminate the biggest problem that stopped me from taking part in a hackathon so far - getting to the venue. This was in the middle of my holidays, and I could work from home. Everything felt right. I managed to complete my working web app, &ldquo;<a href="http://github.com/AlexMathew/g33k">G33K</a>&rdquo;, in the 48 hours (I did screw up big time, though). It was a great sense of accomplishment knowing that I had the most productive 48 hours I&rsquo;ve had in a long time. And over that weekend, I learned a lot.</p>
@@ -89,9 +89,9 @@
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 7]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7/"/>
     <updated>2014-11-03T04:56:57+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7</id>
     <content type="html"><![CDATA[<p>A new approach. Better results.</p>
 
 <p>Here, I&rsquo;ll share the team I generated based on the stats I used, and my insights on the numbers involved.</p>
@@ -166,9 +166,9 @@ Virender Sehwag, Shikhar Dhawan, Virat Kohli, Rohit Sharma, Suresh Raina, MS Dho
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 6]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6/"/>
     <updated>2014-11-01T21:06:27+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6</id>
     <content type="html"><![CDATA[<p>31 October 2014. 7 PM. Struggling because I don&rsquo;t have an eye for design and I didn&rsquo;t know what to do about the infographic. Struggling because I wasn&rsquo;t satisfied with the result I got with this. And that was when rescue arrived.</p>
 
 <p>Deadline extension.</p>
@@ -211,9 +211,9 @@ ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 5]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5/"/>
     <updated>2014-10-31T00:32:23+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5</id>
     <content type="html"><![CDATA[<p>With all the work looking at the player side of stuff, I didn&rsquo;t spend too much time on the venue-based side of the problem. So I decided to get that done. What can sides expect in Australia and New Zealand ?</p>
 
 <p><a href="http://plot.ly">Plotly</a> continues to impress with its usefulness.</p>
@@ -251,9 +251,9 @@ ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 4]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/"/>
     <updated>2014-10-29T09:17:35+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4</id>
     <content type="html"><![CDATA[<p>When you have exams and an interesting problem that you have to complete in a few days, it&rsquo;s not too cool to go down with a fever. These next couple of days are going to be a blaze with all the work. I need to get this done with.</p>
 
 <p>Before picking the teams, I needed a way to visually represent the data I had so far. I needed to have the graphs look beautiful, and also easy to generate.</p>
@@ -343,9 +343,9 @@ ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))
   
   <entry>
     <title type="html"><![CDATA[Basketball Season Has Returned !]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/"/>
     <updated>2014-10-27T01:04:34+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/27/basketball-season-has-returned</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/27/basketball-season-has-returned</id>
     <content type="html"><![CDATA[<p>The countdown to the NBA season is heating up ! The preseason is done and we&rsquo;re in the final few days before the start of the regular season. I&rsquo;ll be honest - I&rsquo;ve not been a huge fan for long. The 2013-14 season was the first one that I followed closely, and that was because I wanted to know the best teams to ask for transfers to in NBA2K14 MyCareer. But I was smitten by the NBA bug, and I was following developments in the season.</p>
 
 <p>Now that it&rsquo;s just a few days before the start of the 2014-15 season, I thought I&rsquo;d take a shot at reviewing the rosters of all the teams, and give my opinion of how I&rsquo;d expect them to perform.</p>
@@ -491,9 +491,9 @@ I&rsquo;m putting up this part of the post right after <a href="http://allball.b
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 3]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/"/>
     <updated>2014-10-26T11:27:57+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3</id>
     <content type="html"><![CDATA[<p>Records, exams, assignments. The absolute worst time possible. Indian education will not improve till they get rid of this concept of maintaining a formal record book where you write unnecessary garbage. In the middle of all this, finding time to work on the TNT problem has been hard. But I&rsquo;ve been reading, trying out stuff and making some gradual progress. And of late, I&rsquo;ve approached this in a different way. Advice from a professor gave me an interesting way to go about this problem. Implementing has been hard, but the idea behind it is brilliant.</p>
 
 <!--more-->
@@ -549,9 +549,9 @@ I&rsquo;m putting up this part of the post right after <a href="http://allball.b
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 2]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2/"/>
     <updated>2014-10-17T00:02:10+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2</id>
     <content type="html"><![CDATA[<p>Step 1 : Get cummulative statistics. <a href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/">Done</a>.</p>
 
 <p>Now I need to find a way to measure the performance of these players during this period. Several people have written about different statistics to do this. I need to pick the best ones for the problem I have at hand.</p>
@@ -595,9 +595,9 @@ I&rsquo;m putting up this part of the post right after <a href="http://allball.b
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 1]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/"/>
     <updated>2014-10-16T14:58:04+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1</id>
     <content type="html"><![CDATA[<p>And so, the journey with TNT begins. A 175K+ row dataset. A new challenge.</p>
 
 <p>Over the next few posts, I&rsquo;ll document the various facets of my approach to this problem. Part 1 - how do I get started ?</p>
@@ -648,9 +648,9 @@ I&rsquo;m putting up this part of the post right after <a href="http://allball.b
   
   <entry>
     <title type="html"><![CDATA[Cause I'm TNT, I'm Dynamite]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/cause-im-tnt/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/15/cause-im-tnt/"/>
     <updated>2014-10-15T23:33:31+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/cause-im-tnt</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/15/cause-im-tnt</id>
     <content type="html"><![CDATA[<p>(Yes, I just made an AC/DC reference)</p>
 
 <p>First off, huge shout out to LatentView Analytics. Thank you for the job placement offer ! It&rsquo;s given me so much peace of mind, and in turn, freedom to experiment with new stuff.</p>
@@ -680,9 +680,9 @@ Text analysis.</p>
   
   <entry>
     <title type="html"><![CDATA[The Beginnings]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/the-beginnings/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/15/the-beginnings/"/>
     <updated>2014-10-15T23:07:00+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/15/the-beginnings</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/15/the-beginnings</id>
     <content type="html"><![CDATA[<p>In the beginning, there was nothing. And then I said &ldquo;Let there be a blog&rdquo;. And it was done.</p>
 
 <!-- more -->

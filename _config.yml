@@ -2,8 +2,8 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://periphrastic-prolixity.herokuapp.com
-title: Periphrastic Prolixity
+url: http://periphrasis.herokuapp.com
+title: Periphrasis
 subtitle: Because thoughts need somewhere to live
 author: Alex Mathew
 simple_search: https://www.google.com/search
@@ -74,13 +74,13 @@ twitter_user: alxmth03
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: true
+google_plus_one: false
 google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
 googleplus_user: +AlexMathew003
-googleplus_hidden: false
+googleplus_hidden: true
 
 # Pinboard
 pinboard_user:
@@ -91,8 +91,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: periphrasticprolixity
-disqus_show_comment_count: false
+disqus_short_name: periphrasis
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-56515983-2

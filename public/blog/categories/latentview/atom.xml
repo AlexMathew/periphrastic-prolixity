@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Latentview | Periphrastic Prolixity]]></title>
-  <link href="http://periphrastic-prolixity.herokuapp.com/blog/categories/latentview/atom.xml" rel="self"/>
-  <link href="http://periphrastic-prolixity.herokuapp.com/"/>
-  <updated>2016-06-14T13:24:09+05:30</updated>
-  <id>http://periphrastic-prolixity.herokuapp.com/</id>
+  <title><![CDATA[Category: Latentview | Periphrasis]]></title>
+  <link href="http://periphrasis.herokuapp.com/blog/categories/latentview/atom.xml" rel="self"/>
+  <link href="http://periphrasis.herokuapp.com/"/>
+  <updated>2016-06-14T13:42:03+05:30</updated>
+  <id>http://periphrasis.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
     <email><![CDATA[alexmathew003@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 7]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7/"/>
     <updated>2014-11-03T04:56:57+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7</id>
     <content type="html"><![CDATA[<p>A new approach. Better results.</p>
 
 <p>Here, I&rsquo;ll share the team I generated based on the stats I used, and my insights on the numbers involved.</p>
@@ -92,9 +92,9 @@ Virender Sehwag, Shikhar Dhawan, Virat Kohli, Rohit Sharma, Suresh Raina, MS Dho
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 6]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6/"/>
     <updated>2014-11-01T21:06:27+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6</id>
     <content type="html"><![CDATA[<p>31 October 2014. 7 PM. Struggling because I don&rsquo;t have an eye for design and I didn&rsquo;t know what to do about the infographic. Struggling because I wasn&rsquo;t satisfied with the result I got with this. And that was when rescue arrived.</p>
 
 <p>Deadline extension.</p>
@@ -137,9 +137,9 @@ ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 5]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5/"/>
     <updated>2014-10-31T00:32:23+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5</id>
     <content type="html"><![CDATA[<p>With all the work looking at the player side of stuff, I didn&rsquo;t spend too much time on the venue-based side of the problem. So I decided to get that done. What can sides expect in Australia and New Zealand ?</p>
 
 <p><a href="http://plot.ly">Plotly</a> continues to impress with its usefulness.</p>
@@ -177,9 +177,9 @@ ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 4]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/"/>
     <updated>2014-10-29T09:17:35+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4</id>
     <content type="html"><![CDATA[<p>When you have exams and an interesting problem that you have to complete in a few days, it&rsquo;s not too cool to go down with a fever. These next couple of days are going to be a blaze with all the work. I need to get this done with.</p>
 
 <p>Before picking the teams, I needed a way to visually represent the data I had so far. I needed to have the graphs look beautiful, and also easy to generate.</p>
@@ -269,9 +269,9 @@ ERA = Avg– ((100 * Avg / SR) * (Total runs in dataset/Total balls in dataset))
   
   <entry>
     <title type="html"><![CDATA[The TNT Journey - Part 3]]></title>
-    <link href="http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/"/>
+    <link href="http://periphrasis.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/"/>
     <updated>2014-10-26T11:27:57+05:30</updated>
-    <id>http://periphrastic-prolixity.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3</id>
+    <id>http://periphrasis.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3</id>
     <content type="html"><![CDATA[<p>Records, exams, assignments. The absolute worst time possible. Indian education will not improve till they get rid of this concept of maintaining a formal record book where you write unnecessary garbage. In the middle of all this, finding time to work on the TNT problem has been hard. But I&rsquo;ve been reading, trying out stuff and making some gradual progress. And of late, I&rsquo;ve approached this in a different way. Advice from a professor gave me an interesting way to go about this problem. Implementing has been hard, but the idea behind it is brilliant.</p>
 
 <!--more-->

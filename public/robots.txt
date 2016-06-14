@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://periphrastic-prolixity.herokuapp.com/sitemap.xml 
+Sitemap: http://periphrasis.herokuapp.com/sitemap.xml 
