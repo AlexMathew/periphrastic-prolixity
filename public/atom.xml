@@ -4,7 +4,7 @@
   <title><![CDATA[Alex Mathew]]></title>
   <link href="http://periphrasis.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://periphrasis.herokuapp.com/"/>
-  <updated>2016-06-17T00:05:54+05:30</updated>
+  <updated>2016-06-17T00:25:37+05:30</updated>
   <id>http://periphrasis.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -25,7 +25,7 @@
 <!--more-->
 
 
-<p>I started working on Scrapple in late 2014 (which was about the time I wrote <a href="http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/">my last blog post before this</a>). It was an idea that was running on my mind for a while - an itch that I wanted to scratch. The snowball effect struck, and in a few months, Scrapple was sort of a big deal on Github (for a day) and I felt this unusual sense of responsibility that I had to explain to people what exactly it was that I was trying to achieve. I have met people who could relate to the problem and have given me some great advice and suggestions. To the other people who could not relate to it, I have tried explaining the idea of Scrapple.</p>
+<p>I started working on Scrapple in late 2014 (which was about the time I wrote <a href="http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/">my last blog post before this</a>). It was an idea that was running on my mind for a while - an itch that I wanted to scratch. The snowball effect struck, and in a few months, Scrapple was sort of a big deal on Github (for a day) and I felt this unusual sense of responsibility that I had to explain to people what exactly it was that I was trying to achieve. For example, I gave a talk at a <a href="http://www.meetup.com/Chennaipy/events/230284587/">Python users meetup</a> about Scrapple. I have met people who could relate to the problem and have given me some great advice and suggestions. To the other people who could not relate to it, I have tried explaining the idea of Scrapple.</p>
 
 <p>And I have failed. Quite miserably.</p>
 
