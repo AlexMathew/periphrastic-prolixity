@@ -4,7 +4,7 @@
   <title><![CDATA[Alex Mathew]]></title>
   <link href="http://periphrasis.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://periphrasis.herokuapp.com/"/>
-  <updated>2016-06-14T13:48:15+05:30</updated>
+  <updated>2016-06-17T00:05:54+05:30</updated>
   <id>http://periphrasis.herokuapp.com/</id>
   <author>
     <name><![CDATA[Alex Mathew]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[I Have to Talk About Scrapple]]></title>
+    <link href="http://periphrasis.herokuapp.com/blog/2016/06/15/i-have-to-talk-about-scrapple/"/>
+    <updated>2016-06-15T15:45:07+05:30</updated>
+    <id>http://periphrasis.herokuapp.com/blog/2016/06/15/i-have-to-talk-about-scrapple</id>
+    <content type="html"><![CDATA[<p><em>*One and a half years after my last blog post*</em></p>
+
+<p>I maintain <a href="https://github.com/AlexMathew/scrapple">a project on Github</a>, and I can&rsquo;t shut up about it. I won&rsquo;t deny that I talk about it a lot, and that&rsquo;s because I&rsquo;m proud of it. But I still don&rsquo;t have a proper way of explaining it to people. I think I have to start writing about what it can do.</p>
+
+<!--more-->
+
+
+<p>I started working on Scrapple in late 2014 (which was about the time I wrote <a href="http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/">my last blog post before this</a>). It was an idea that was running on my mind for a while - an itch that I wanted to scratch. The snowball effect struck, and in a few months, Scrapple was sort of a big deal on Github (for a day) and I felt this unusual sense of responsibility that I had to explain to people what exactly it was that I was trying to achieve. I have met people who could relate to the problem and have given me some great advice and suggestions. To the other people who could not relate to it, I have tried explaining the idea of Scrapple.</p>
+
+<p>And I have failed. Quite miserably.</p>
+
+<p>I have tried to maintain an extensive documentation of the entire code base. But in terms of people trying to use Scrapple, this does not particularly help. These people want to know how Scrapple can be useful to them, how to get started with using it, and the various options they have at their disposal. <a href="http://scrapple.readthedocs.io/en/latest/#experimentation-results">The couple of examples that I have added to the Scrapple documentation</a> were definitely not enough for all this. I had to do more.</p>
+
+<p>Add this need with <a href="https://medium.com/@alxmth03/winner-winner-chicken-dinner-ec11112170ab#.p0kb90a9m">my decision to try to start writing</a> and the fact that I have no real way to maintain my blog so far, and I think I have a solution. Write about web scraping in general, and how Scrapple fits in.</p>
+
+<p>I might manage to get my blog alive, get a clearer picture of what I am trying to achieve with Scrapple, and have an overall better understanding of maintaining a project and getting people involved in it. And have fun doing it.</p>
+
+<p>I don&rsquo;t know how often I&rsquo;ll manage to write, or what exactly I will be writing. I&rsquo;ll let this take shape in time.</p>
+
+<p>Hopefully, it works out well.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What I Learned From My First Hackathon]]></title>
@@ -60,7 +88,7 @@
 </ul>
 
 
-<p>Sleep deprivation does bad things to you. Very bad things. In a sudden moment of retardness, you could end up making stupid mistakes that you notice too late. There&rsquo;s not a lot you can do to &ldquo;avoid&rdquo; this - just hope you keep your sanity through the entire duration of the hackathon.</p>
+<p>Sleep deprivation does bad things to you. Very bad things. In a sudden moment of idiocy, you could end up making stupid mistakes that you notice too late. There&rsquo;s not a lot you can do to &ldquo;avoid&rdquo; this - just hope you keep your sanity through the entire duration of the hackathon.</p>
 
 <ul>
 <li><strong>Be sure about your deployment options</strong></li>

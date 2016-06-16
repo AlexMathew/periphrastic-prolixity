@@ -31,7 +31,7 @@ There are two ways you can decide a stack for your hack - use something you are 
 
 * **Make sure you don't make noob mistakes**
 
-Sleep deprivation does bad things to you. Very bad things. In a sudden moment of retardness, you could end up making stupid mistakes that you notice too late. There's not a lot you can do to "avoid" this - just hope you keep your sanity through the entire duration of the hackathon. 
+Sleep deprivation does bad things to you. Very bad things. In a sudden moment of idiocy, you could end up making stupid mistakes that you notice too late. There's not a lot you can do to "avoid" this - just hope you keep your sanity through the entire duration of the hackathon. 
 
 * **Be sure about your deployment options**
 

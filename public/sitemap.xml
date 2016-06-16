@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://periphrasis.herokuapp.com/blog/2016/06/15/i-have-to-talk-about-scrapple/</loc>
+    
+    <lastmod>2016-06-15T15:45:07+05:30</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/</loc>
     
     <lastmod>2014-12-09T18:54:53+05:30</lastmod>
@@ -93,14 +101,14 @@
   
   <url>
     <loc>http://periphrasis.herokuapp.com/</loc>
-    <lastmod>2016-06-14T13:48:15+05:30</lastmod>
+    <lastmod>2016-06-17T00:05:54+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://periphrasis.herokuapp.com/blog/archives/</loc>
-    <lastmod>2016-06-14T13:48:15+05:30</lastmod>
+    <lastmod>2016-06-17T00:05:54+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
