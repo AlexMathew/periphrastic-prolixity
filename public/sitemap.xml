@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://periphrasis.herokuapp.com/blog/2016/09/16/the-book-reviews-part-1/</loc>
+    
+    <lastmod>2016-09-16T10:07:01+05:30</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://periphrasis.herokuapp.com/blog/2016/06/15/i-have-to-talk-about-scrapple/</loc>
     
     <lastmod>2016-06-15T15:45:07+05:30</lastmod>
@@ -101,14 +109,14 @@
   
   <url>
     <loc>http://periphrasis.herokuapp.com/</loc>
-    <lastmod>2016-06-17T00:25:37+05:30</lastmod>
+    <lastmod>2016-09-18T21:40:15+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://periphrasis.herokuapp.com/blog/archives/</loc>
-    <lastmod>2016-06-17T00:25:37+05:30</lastmod>
+    <lastmod>2016-09-18T21:40:15+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
