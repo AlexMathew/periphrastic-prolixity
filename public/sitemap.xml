@@ -1,126 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2016/09/16/the-book-reviews-part-1/</loc>
-    
-    <lastmod>2016-09-16T10:07:01+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2016/06/15/i-have-to-talk-about-scrapple/</loc>
-    
-    <lastmod>2016-06-15T15:45:07+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/</loc>
-    
-    <lastmod>2014-12-09T18:54:53+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7/</loc>
-    
-    <lastmod>2014-11-03T04:56:57+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6/</loc>
-    
-    <lastmod>2014-11-01T21:06:27+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5/</loc>
-    
-    <lastmod>2014-10-31T00:32:23+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/</loc>
-    
-    <lastmod>2014-10-29T09:17:35+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/</loc>
-    
-    <lastmod>2014-10-27T01:04:34+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/</loc>
-    
-    <lastmod>2014-10-26T11:27:57+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2/</loc>
-    
-    <lastmod>2014-10-17T00:02:10+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/</loc>
-    
-    <lastmod>2014-10-16T14:58:04+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/15/cause-im-tnt/</loc>
-    
-    <lastmod>2014-10-15T23:33:31+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/2014/10/15/the-beginnings/</loc>
-    
-    <lastmod>2014-10-15T23:07:00+05:30</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/</loc>
-    <lastmod>2016-09-18T21:40:15+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://periphrasis.herokuapp.com/blog/archives/</loc>
-    <lastmod>2016-09-18T21:40:15+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2018/02/07/scoregasm-the-birth-of-an-obsession/</loc>
+<lastmod>2018-02-07T13:49:39+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2016/09/16/the-book-reviews-part-1/</loc>
+<lastmod>2016-09-16T10:07:01+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2016/06/15/i-have-to-talk-about-scrapple/</loc>
+<lastmod>2016-06-15T15:45:07+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/12/09/what-i-learned-from-my-first-hackathon/</loc>
+<lastmod>2014-12-09T18:54:53+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/11/03/the-tnt-journey-part-7/</loc>
+<lastmod>2014-11-03T04:56:57+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/11/01/the-tnt-journey-part-6/</loc>
+<lastmod>2014-11-01T21:06:27+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/31/the-tnt-journey-part-5/</loc>
+<lastmod>2014-10-31T00:32:23+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/29/the-tnt-journey-part-4/</loc>
+<lastmod>2014-10-29T09:17:35+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/27/basketball-season-has-returned/</loc>
+<lastmod>2014-10-27T01:04:34+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/26/the-tnt-journey-part-3/</loc>
+<lastmod>2014-10-26T11:27:57+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/17/the-tnt-journey-part-2/</loc>
+<lastmod>2014-10-17T00:02:10+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/16/the-tnt-journey-part-1/</loc>
+<lastmod>2014-10-16T14:58:04+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/15/cause-im-tnt/</loc>
+<lastmod>2014-10-15T23:33:31+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/2014/10/15/the-beginnings/</loc>
+<lastmod>2014-10-15T23:07:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/archives/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/latentview/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/tnt/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/nba/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/plotly/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/hackathon/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/scrapple/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/web-scraping/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/book-reviews/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/sports/</loc>
+</url>
+<url>
+<loc>http://periphrasis.herokuapp.com/blog/categories/musings/</loc>
+</url>
 </urlset>
